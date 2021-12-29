@@ -89,7 +89,7 @@ https://www.tooplate.com/view/2115-marvel
                         
                         <div class="custom-btn-group mt-4">
                           <a href="cv/Yogi Setiawan_CV.pdf" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
-                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -309,9 +309,10 @@ https://www.tooplate.com/view/2115-marvel
 
           <div class="col-lg-6 col-12">
             <div class="contact-form">
-              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+              <!-- <h2 class="mb-4">Interested to work together? Let's talk</h2> -->
+              <h2 class="mb-4">Contact Me at</h2>
 
-              <form action="" method="get">
+              <form action="https://formspree.io/f/myyozebg" method="POST">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
@@ -326,7 +327,7 @@ https://www.tooplate.com/view/2115-marvel
                   </div>
 
                   <div class="ml-lg-auto col-lg-5 col-12">
-                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                    <button type="submit" class="form-control submit-btn">Send</button>
                   </div>
                 </div>
               </form>
@@ -360,5 +361,27 @@ https://www.tooplate.com/view/2115-marvel
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
 
+    <!-- <script>
+      var form = document.getElementById("my-form");
+      
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+  </script> -->
   </body>
 </html>
